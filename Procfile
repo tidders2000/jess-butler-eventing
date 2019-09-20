@@ -1,1 +1,1 @@
-web: gunicorn sharemypics.wsgi:application
+web: gunicorn jess-butler-eventing.wsgi:application
