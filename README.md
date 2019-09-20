@@ -1,4 +1,4 @@
-         ___        ______     ____ _                 _  ___  
+[![Build Status](https://travis-ci.org/tidders2000/jess-butler-eventing.svg?branch=master)](https://travis-ci.org/tidders2000/jess-butler-eventing)         ___        ______     ____ _                 _  ___  
         / \ \      / / ___|   / ___| | ___  _   _  __| |/ _ \ 
        / _ \ \ /\ / /\___ \  | |   | |/ _ \| | | |/ _` | (_) |
       / ___ \ V  V /  ___) | | |___| | (_) | |_| | (_| |\__, |
