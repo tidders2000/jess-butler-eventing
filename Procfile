@@ -1,1 +1,1 @@
-web: gunicorn jess-butler-eventing.wsgi:application
+web: gunicorn jbeventing.wsgi:application
