@@ -1,0 +1,1 @@
+web: gunicorn sharemypics.wsgi:application
