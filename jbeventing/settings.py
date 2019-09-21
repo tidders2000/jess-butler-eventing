@@ -25,7 +25,7 @@ SECRET_KEY = 'lk)9@i19$zpe8s^9oz%x@2_6wu3kl08za)h7k@(gst!$t40=yu'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),'07ff6f6e02ee4ffb9a077b09c6ca76f7.vfs.cloud9.us-east-1.amazonaws.com','jess-butler-eventing.herokuapp.com','jessbutlereventing.com']
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),'07ff6f6e02ee4ffb9a077b09c6ca76f7.vfs.cloud9.us-east-1.amazonaws.com','jess-butler-eventing.herokuapp.com','jessbutlereventing.com','www.jessbutlereventing.com']
 
 
 # Application definition
