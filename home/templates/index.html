@@ -1,27 +1,48 @@
-<!DOCTYPE html>
-<html>
-    
+{% extends 'base.html' %} {% load staticfiles %}} {% load bootstrap_tags %} {% block content %}
+
+<div class="slider fullscreen">
+  <ul class="slides">
+    <li>
+      <img src="{% static 'images/jb_1.jpg' %}">
+      <!-- random image -->
+      <div class="caption center-align">
+        <h3>This is our big Tagline!</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+      <img src="{% static 'images/jb_2.jpg' %}">
+      <!-- random image -->
+      <div class="caption left-align">
+        <h3>Left Aligned Caption</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+      <img src="{% static 'images/jb_3.jpg' %}">
+      <!-- random image -->
+      <div class="caption right-align">
+        <h3>Right Aligned Caption</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+      <img src="{% static 'images/jb_4.jpg' %}">
+      <!-- random image -->
+      <div class="caption center-align">
+        <h3>This is our big Tagline!</h3>
+        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      </div>
+    </li>
+    <li>
+      <div class="caption center-align">
+        <img class="logo_image" src="{% static 'images/jb logo.jpg' %}" />
+        <h5 class="contact light white-text text-lighten-4">contact@jessbutlereventing.com<br>
+        Full Site Coming Soon</h5>
+      </div>
+    </li>
+  </ul>
+</div>
 
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--bootstrap,fontawsome,lightcase(lightbox plug) and custom css-->
-
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
-
-</head>
-<body>
-    
-    <h1>Hello World</h1>
-    
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
-    
-</body>
- 
-  
- 
-</html>
+{% endblock %}
