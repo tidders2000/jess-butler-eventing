@@ -1,48 +1,51 @@
-{% extends 'base.html' %} {% load staticfiles %}} {% load bootstrap_tags %} {% block content %}
+{% extends 'base.html' %}{% load staticfiles %}{% block content %}
+
 
 <div class="slider fullscreen">
   <ul class="slides">
-    <li>
-      <img src="{% static 'images/jb_1.jpg' %}">
+
+         <li class="fullblock">
+            <div class="overlay-block h-100 w-100"></div>
+          <img src="{% static 'images/jb_1.jpg' %}" class='img_slider_adj'> <!-- random image -->
+        <div class="caption center-align fill">
+          <h3 class='slide1_text'><b class='or'>JESS</b><br>BUTLER EVENTING</h3>
+           
+        </div>
+      </li>
+    <li class="fullblock">
+       <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_2.jpg' %}" class='img_slider_adj'>
+      <!-- random image -->
+      <div class="caption center-align bg">
+        <h3 class='slide2_text'><b class='or'>C</b>oaching</h3>
+     
+      </div>
+    </li>
+    <li class="fullblock">
+       <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_3.jpg' %}" class='img_slider_adj'>
       <!-- random image -->
       <div class="caption center-align">
-        <h3>This is our big Tagline!</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        <h3 class='slide2_text'>Horse <span class='or'>Camps</span></h3>
+      
       </div>
     </li>
-    <li>
-      <img src="{% static 'images/jb_2.jpg' %}">
+    <li class="fullblock">
+      <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_4.jpg' %}" class='img_slider_adj'/>
       <!-- random image -->
-      <div class="caption left-align">
-        <h3>Left Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+      <div class="caption">
+        <h3 class='slide4_text'>GB <br><b class='or'>Competitor</span></b></h3>
+     
       </div>
     </li>
     <li>
-      <img src="{% static 'images/jb_3.jpg' %}">
-      <!-- random image -->
-      <div class="caption right-align">
-        <h3>Right Aligned Caption</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-    <li>
-      <img src="{% static 'images/jb_4.jpg' %}">
-      <!-- random image -->
-      <div class="caption center-align">
-        <h3>This is our big Tagline!</h3>
-        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-      </div>
-    </li>
-    <li>
-      <div class="caption center-align">
+       <div class="caption center-align">
         <img class="logo_image" src="{% static 'images/jb logo.jpg' %}" />
-        <h5 class="contact light white-text text-lighten-4">contact@jessbutlereventing.com<br>
-        Full Site Coming Soon</h5>
+        <h5 class="contact light white-text text-lighten-4 logo_text">contact<br>@<br>jessbutlereventing.com<br><span class='bl'> Full Site Coming Soon</span></h5>
       </div>
     </li>
   </ul>
 </div>
-
 
 {% endblock %}
