@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'lk)9@i19$zpe8s^9oz%x@2_6wu3kl08za)h7k@(gst!$t40=yu'
+SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -128,6 +128,7 @@ SECURE_SSL_REDIRECT = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 # STATICFILES_STORAGE = 'custom_storages.StaticStorage'
+
 AWS_S3_OBJECT_PARAMETERS = {
     'Expires':'Thu, 31 Dec 2099 20:00:00 GMT',
     'CacheControl':'max-age=94608000',

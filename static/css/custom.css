@@ -13,7 +13,13 @@
      color:#707070;
  }
 
+.blu{
+    color:#00247d;
+}
 
+.redd{
+    color:#cf142b;
+}
 
 
 .contact{
@@ -36,7 +42,7 @@
 
 .slide4_text{
         font-size: 100px;
-    margin-top: 10%;
+    margin-top: 18%;
     margin-left:0;
     font-family: 'Montserrat', sans-serif;
 }
