@@ -22,14 +22,7 @@ class TestViews(TestCase):
         page = self.client.get("/accounts/register", follow=True)
         self.assertEqual(page.status_code, 200)
     
-    def test_logon_profile(self):
-        c = Client()
-        c.login(username='fred', password='secret', email='test@test.com')
-        page = self.client.get("/")
-        self.assertEqual(page.status_code, 200)
-        self.assertTemplateUsed(page, "index.html")
-        page = self.client.get("/accounts/profile")
-        self.assertEqual(page.status_code, 301)
+ 
     
     def test_logout(self):
         user = User.objects.create(username='testuser')
