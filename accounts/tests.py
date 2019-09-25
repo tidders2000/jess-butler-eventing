@@ -7,7 +7,7 @@ class TestViews(TestCase):
     """
     tests to run against home
     
-    """
+
     def test_logon_index(self):
         user = User.objects.create(username='testuser')
         user.set_password('12345')
@@ -30,3 +30,5 @@ class TestViews(TestCase):
         user.save()
         c = Client()
         logged_in = c.login(username='testuser', password='12345')
+        
+     """
