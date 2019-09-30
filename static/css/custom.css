@@ -30,7 +30,7 @@
 
 .slide1_text{
     font-size: 100px;
-    margin-top: 25%;
+    margin-top: 15%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -85,9 +85,31 @@
          font-size: 50px;
 }
 
-@media only screen and (max-width: 500px) {
+.circle{
+    width:124px !important;
+    height:124px!important;
+    padding-bottom: 30px;
+    
+}
+
+#map{
+  display:block;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom:20px;
+ width: 500px;
+  height:300px;
+  z-index: 0;
+  
+}
+
+
+      
+
+@media only screen and (max-width: 700px) {
   .slide1_text , .slide2_text, .slide4_text{
     font-size: 40px;
+      margin-top: 18%;
   
   }
   
