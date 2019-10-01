@@ -2,5 +2,8 @@
 
 
 <h1>Feedback</h1>
+ {% for f in fb %}
+<img src="{{ STATIC_URL}}{{f.horse_image}} %}"/>
+{% endfor %}
 
 {% endblock %}
