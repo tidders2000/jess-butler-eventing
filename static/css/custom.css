@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+ 
+ /* .........General CSS All pages.............. */
+ 
+.col{
+    padding: 0; 
+}
+/*jess logo colours*/
 
 .or{
     color: #DBA543;
@@ -20,13 +27,63 @@
 .redd{
     color:#cf142b;
 }
+ /* .........Base..................... */
+ .logo_image{
+   
+   background-size: cover;
+   max-width: 320px;
+   max-height:116px;
+   }
+   
+.nav{
+    border-bottom: 5px solid #DBA543;
+    -webkit-box-shadow: 0 8px 6px -6px #707070;
+    -moz-box-shadow: 0 8px 6px -6px #707070;
+    box-shadow: 0 8px 6px -6px #707070;
+    margin-bottom: 5px;
+    background-color: white;
+}
+.nav_logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.button-collapse{
+    color:#707070;
+ 
+}
+
+.menu{
+    font-size: 50px!important;
+}
+
+.logo_text{
+     font-family: 'Montserrat', sans-serif;
+         font-size: 50px;
+}
+
+.circle{
+    width:124px !important;
+    height:124px!important;
+    padding-bottom: 30px;
+    
+}
 
 
+.left-text{
+   padding-left: 60px!important;
+}
+
+ 
+ /* .........index pages.............. */
 .contact{
     font-size: 1.2em;
 }
 
-
+.img_slider_adj{
+    min-height:800px;  
+}
 
 .slide1_text{
     font-size: 100px;
@@ -67,31 +124,9 @@
 
 
 
-.img_slider_adj{
-    min-height:800px;  
-}
 
-.logo_image{
-   
-   background-size: cover;
-   max-width: 320px;
-   max-height:116px;
-   
-  
-}
 
-.logo_text{
-     font-family: 'Montserrat', sans-serif;
-         font-size: 50px;
-}
-
-.circle{
-    width:124px !important;
-    height:124px!important;
-    padding-bottom: 30px;
-    
-}
-
+/* .........footer.............. */
 #map{
   display:block;
   margin: auto;
@@ -103,9 +138,71 @@
   
 }
 
+.page-footer{
+    background-color: #2E2665;
+}
 
-      
+.footer-copyright{
+    background-color: #DBA543!important;
+}
+/* .........feedback page.............. */
+.image_container {
+  position: relative;
+  width: 100%;
+}
 
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 288.92px;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #707070;
+}
+
+.image_container:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.modal{
+    width:35%;
+    background-color: #99CCCC;
+}
+.modal_para{
+    display:inline-block;
+   overflow:auto;
+   word-break: break-all;
+}
+
+.fb_layout{
+    padding: 0 !important;/* corrects materalise gutter */
+}
+
+/* .........Medi Queries.............. */
 @media only screen and (max-width: 700px) {
   .slide1_text , .slide2_text, .slide4_text{
     font-size: 40px;

@@ -16,6 +16,7 @@
 </head>
 
 <body>
+    <nav class='nav'>
     <ul id="slide-out" class="side-nav">
         <li>
             <div class="user-view">
@@ -32,15 +33,19 @@
         <li><a href="#!"><i class="material-icons">email</i>Contact</a></li>
 
     </ul>
-    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a> {% if messages %}
+    <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="large menu material-icons">menu</i></a>
+    <img src="{% static 'images/jb logo.small.jpg' %}" class="nav_logo"></img>
+    </nav>
     <div>
-        {% for message in messages %} {{ message }} {% endfor %}
+        {% if messages %} {% for message in messages %} {{ message }} {% endfor %}
     </div>
-    {% endif %} {% block content %}{% endblock %}
+    {% endif %} 
+    
+    {% block content %}{% endblock %}
     <footer class="page-footer">
-        <div class="container">
+        <div class="container main_footer">
             <div class="row">
-                <div class="col l4 s12">
+                <div class="col l4 s12 left-text">
                     <h5 class="white-text">Footer Content</h5>
                     <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                 </div>
@@ -65,8 +70,6 @@
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
     <script type="text/javascript" src="{% static 'js/maps.js' %}"></script>
-
-
     <script type="text/javascript" src="{% static 'js/js.js' %}"></script>
 </body>
 
