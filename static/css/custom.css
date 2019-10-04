@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
  
  /* .........General CSS All pages.............. */
  
 .col{
     padding: 0; 
+}
+
+.row{
+    padding-top:0;
+    padding-bottom:0;
+}
+i{
+    margin-right: 20px;
 }
 /*jess logo colours*/
 
@@ -138,12 +147,29 @@
   
 }
 
+.map-holder{
+    padding-top:20px;
+}
+
 .page-footer{
     background-color: #2E2665;
+    padding-top:0;
 }
 
 .footer-copyright{
     background-color: #DBA543!important;
+}
+
+.footer_links li a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color:#707070;
+}
+
+.address{
+    font-family: 'Roboto', sans-serif!important;
+  font-size: 18px!important;
+  color:#707070;
 }
 /* .........feedback page.............. */
 .image_container {
@@ -155,7 +181,7 @@
   display: block;
   width: 100%;
   height: auto;
-  max-height: 288.92px;
+  max-height: 280.17px;
   
 }
 
@@ -190,16 +216,38 @@
 
 .modal{
     width:35%;
-    background-color: #99CCCC;
+    
+}
+
+.modal-content{
+    background-color:#2E2665;
+    color:white;
 }
 .modal_para{
     display:inline-block;
    overflow:auto;
    word-break: break-all;
+   background-color:white;
+   color:black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal .modal-footer{
+     background-color:#2E2665;
+}
+
+.fb_close{
+    color:white;
+    font-size:30px;
 }
 
 .fb_layout{
     padding: 0 !important;/* corrects materalise gutter */
+}
+
+.mr{
+    padding-bottom:0;
+    margin-bottom:0;
 }
 
 /* .........Medi Queries.............. */
