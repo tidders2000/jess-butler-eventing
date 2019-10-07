@@ -249,6 +249,30 @@ i{
     padding-bottom:0;
     margin-bottom:0;
 }
+/* .........Horse Camp.............. */
+.circ1{
+    
+    /*background-color: #707070;*/
+    height: 200px;
+    width: 200px!important;
+    background-image: url('badge.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center!important;
+    
+
+}
+
+.squ2{
+      background-color: #707070;
+    height: 200px;
+    width: 200px;
+}
+
+.horsecamp_cb{
+    background-color: green;
+    min-height: 400px;
+}
 
 /* .........Medi Queries.............. */
 @media only screen and (max-width: 700px) {

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'home',
     'accounts',
     'feedback',
+    'horsecamp',
 ]
 
 MIDDLEWARE = [
