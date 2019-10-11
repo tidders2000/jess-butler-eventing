@@ -259,6 +259,7 @@ i{
     background-repeat: no-repeat;
     background-position: center;
     text-align: center!important;
+    vertical-align: middle;
     
 
 }
@@ -270,9 +271,40 @@ i{
 }
 
 .horsecamp_cb{
-    background-color: green;
-    min-height: 400px;
+   background-image: url('triangle_gr.jpg');
+   height:400px;
+   background-repeat: no-repeat;
+   background-size:contain;
+   margin-top: 150px;
+   margin-bottom: 100px;
+   text-align: center;
+   
 }
+
+.horsecamp_cb_right{
+   float: right;
+   background-image: url('triangle_gright.jpg');
+   height:400px;
+   background-repeat: no-repeat;
+   background-size:contain;
+   background-position: right;
+   margin-top: 150px;
+   margin-bottom: 100px;
+   
+}
+
+
+
+
+.hc_para{
+    background-color:rgba(0,36,125,0.5) ;
+    margin-top: 150px;
+    min-height: 400px!important;
+    padding-right: 50px!important;
+    padding: 100px!important;
+}
+
+
 
 /* .........Medi Queries.............. */
 @media only screen and (max-width: 700px) {
