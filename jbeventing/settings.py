@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'accounts',
     'feedback',
     'horsecamp',
+    
 ]
 
 MIDDLEWARE = [
@@ -71,10 +72,16 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.static',
                 'django.template.context_processors.media',
+                
             ],
+           
         },
     },
 ]
+
+
+    
+    
 
 WSGI_APPLICATION = 'jbeventing.wsgi.application'
 
@@ -110,8 +117,11 @@ AUTH_PASSWORD_VALIDATORS = [
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    'accounts.backends.EmailAuth'
+    'accounts.backends.EmailAuth',
+
 ]
+
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/

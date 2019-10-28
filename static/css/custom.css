@@ -4,17 +4,26 @@
  /* .........General CSS All pages.............. */
  
 .col{
-    padding: 0; 
+    padding-left: 0!important;
+    padding-right: 0!important;
 }
 
 .row{
-    padding-top:0;
-    padding-bottom:0;
+  
+    padding:0;
 }
 i{
     margin-right: 20px;
 }
 /*jess logo colours*/
+
+.green{
+    background-color: green;
+}
+
+.yellow{
+    background-color: yellow;
+}
 
 .or{
     color: #DBA543;
@@ -117,6 +126,7 @@ i{
     display:block;
      background-size: cover;
   position: relative;
+ 
 }
 
 .overlay-block {
@@ -131,7 +141,14 @@ i{
   overflow: hidden;
 }
 
+.slider{
 
+    min-height: 700px;
+}
+
+.slides li{
+    min-height: 700px;
+}
 
 
 
@@ -304,7 +321,38 @@ i{
     padding: 100px!important;
 }
 
+/* .........index1..................... */
+.sqh{
+    height:400px;
+    padding-left: 0;
+    padding-right:0;
+    position: relative;
+    text-align: center;
+    background-color: #DBA543;
+}
 
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size: 30px;
+  
+}
+
+.image_container{
+    padding-left:0!important;
+    padding-right: 0!important;
+}
+.fb_pic{
+    height: 100%;
+    width: 100%;
+}
+
+.fb_holder{
+    margin-bottom: 0;
+}
 
 /* .........Medi Queries.............. */
 @media only screen and (max-width: 700px) {
