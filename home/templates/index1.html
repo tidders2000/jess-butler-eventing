@@ -47,26 +47,41 @@
 <div class='row fb_holder'>
  
 
-  <div class='col s12 m4 sqh fb_sq'>
+  <div class='col s12 m4 sqh fb_sq image_container'>
      <img src='{% static 'images/riding-lesson.jpg' %}' class="fb_pic"/>
+      <p class='centered hide_title'>Heading</p>
+      <a href="#{{f.id}}" class="modal-trigger"><div class="overlay">
+          <div class="text">Here is some text</div>
+        </div></a>
   </div>
-  <div class='col s12 m4 sqh fb_sq'>
+  <div class='col s12 m4 sqh fb_sq image_container'>
      <img src='{% static 'images/stables.png' %}' class="fb_pic"/>
+     <p class='centered hide_title'>Heading</p>
+      <a href="#{{f.id}}" class="modal-trigger"><div class="overlay">
+          <div class="text">Here is some text</div>
+        </div></a>
   </div>
-  <div class='col s12 m4 sqh fb_sq'>
+  <div class='col s12 m4 sqh fb_sq image_container'>
      <img src='{% static 'images/feed.jpg' %}' class="fb_pic"/>
+     <p class='centered hide_title'>Heading</p>
+      <a href="#{{f.id}}" class="modal-trigger"><div class="overlay">
+          <div class="text">Here is some text</div>
+        </div></a>
   </div>
  
 
 </div>
 
-<div class='row fb_holder'>
+<div class='row fb_holder '>
  
  {% for p in json2.feed.data%}
-  <div class='col s12 m4 sqh fb_sq'>
+  <div class='col s12 m4 sqh fb_sq image_container'>
      
     <img src='{{p.full_picture}}' class="fb_pic"/>
     <p class='centered'>'{{p.message}}'</p>
+    <a href="{{p.link}}" class=""><div class="overlay">
+          <div class="text"><img class="zi" src="{% static 'images/fuof.png' %}"/></div>
+        </div></a>
     
     
   </div>
