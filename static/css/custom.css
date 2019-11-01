@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
- 
+@import url('https://fonts.googleapis.com/css?family=Romanesco&display=swap');
  /* .........General CSS All pages.............. */
- 
+ body{
+      font-family: 'Roboto', sans-serif;
+ }
 .col{
     padding-left: 0!important;
     padding-right: 0!important;
+}
+
+.message{
+    width:20%;
+    margin-left: 40%;
+    min-height:50px;
+    margin-top: 50px;
+    background-color:#FFF3CD;
+    border-radius: 5px;
+    padding-left: 5px;
+    color:black;
+   
 }
 
 .row{
@@ -146,12 +160,14 @@ i{
     min-height: 700px;
 }
 
-.slides li{
+.slides2 li{
     min-height: 700px;
 }
 
 
-
+.fb_slider_title{
+    width:80%;
+}
 /* .........footer.............. */
 #map{
   display:block;
@@ -210,18 +226,20 @@ i{
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  
   transition: .5s ease;
   background-color: #707070;
+  opacity: 0;
+ 
 }
 
 .image_container:hover .overlay {
-  opacity: 0.8;
+ opacity: 0.8;
  
 }
 
 .text {
-  color: white;
+  color: #DBA543;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -234,6 +252,7 @@ i{
 
 .modal{
     width:35%;
+    overflow-y: hidden;
     
 }
 
@@ -267,6 +286,8 @@ i{
     padding-bottom:0;
     margin-bottom:0;
 }
+
+
 /* .........Horse Camp.............. */
 .circ1{
     
@@ -334,7 +355,7 @@ i{
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   color:white;
@@ -342,9 +363,32 @@ i{
   
 }
 
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color:white;
+  font-size: 30px;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.image-para{
+    position: absolute;
+    top:20%;
+    left:15%;
+    width:80%;
+    font-size: 30px;
+    background-color: rgba(240, 255, 255, 0.5);
+    color:#DBA543;
+    font-weight: 400;
+    font-family: 'Romanesco', cursive;
+}
+
 .image_container{
     padding-left:0!important;
     padding-right: 0!important;
+    text-align: center;
 }
 .fb_pic{
     height: 100%;
@@ -354,6 +398,32 @@ i{
 .fb_holder{
     margin-bottom: 0;
 }
+
+.slider_para{
+    display:inline-block;
+   overflow:auto;
+   /*word-break: break-all;*/
+   font-size: 20px;
+    color:#DBA543!important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.signup{
+    padding:20px;
+}
+
+.signup h5{
+    color: #707070;
+}
+
+.btn-secondary{
+    background-color: #DBA543;
+}
+
+.feed_slider_title{
+    color: #707070;
+}
+
 
 /* .........Medi Queries.............. */
 @media only screen and (max-width: 700px) {

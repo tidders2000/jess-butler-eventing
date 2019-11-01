@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, reverse, HttpResponseRedirect
-
+from feedback.models import Feedback
 import json
 import requests
+from signup.forms import signupform
 
 
 
@@ -16,7 +17,9 @@ def index1(request):
     
     h = requests.get('https://graph.facebook.com/v4.0/me?fields=name%2Cfeed.limit(9)%7Bfull_picture%2Cmessage%2Clink%7D&access_token=EAAFwJhMIpkUBACt4KPaeRa03hc3LNMrhWjIAesibZA2LeKuZCnsm9u6ezo8UbXDlMOODW2QOS9ZBzpJjHobM7IxDarRgIE0lEL3MI7ZBSfnPU64gxTfb0hV2VB2RgZB2wmAxpnag6M1ju2K3RjSAZAY3qFvtsZBBQUZC0nEV85VsWwZDZD')
     json2 = h.json()
-    return render(request,"index1.html",{"json":json, "json2":json2})
+    fb=Feedback.objects.all()
+    Signupform=signupform()
+    return render(request,"index1.html",{"json":json, "json2":json2, 'signupform':Signupform, "fb":fb})
        
     
 

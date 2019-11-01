@@ -20,6 +20,8 @@ from home.views import index
 from horsecamp import urls as urls_horsecamp
 from accounts import urls as urls_accounts
 from feedback import urls as urls_feedback
+from signup import urls as urls_signup
+from signup.views import signups
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,4 +30,5 @@ urlpatterns = [
        url(r'^accounts/', include(urls_accounts)),
        url(r'^feedback/', include(urls_feedback)),
         url(r'^horsecamp/', include(urls_horsecamp)),
+         url(r'^signup/', include(urls_signup)),
 ]
