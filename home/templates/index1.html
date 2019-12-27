@@ -70,7 +70,7 @@
   <div class='col s12 m4 sqh fb_sq image_container'>
     <img src="{% static 'images/stables.png' %}" class="fb_pic" />
 
-    <p class='centered hide_title'>Horse Camps</p>
+    <p class='centered_head hide_title'>Horse Camps</p>
     <a href="{% url 'horsecamp' %}" class="modal-trigger">
       <div class="overlay">
         <div class=" text">'Attend a weekend horse camp with 2 or 3 of your riding buddies. Overnight accomodation for your horse and custom designed instruction</div>
@@ -79,7 +79,7 @@
   </div>
   <div class='col s12 m4 sqh fb_sq image_container'>
     <img src="{% static 'images/riding-lesson.jpg' %}" class="fb_pic" />
-    <p class='centered hide_title'>Lessons</p>
+    <p class='centered_head hide_title'>Lessons</p>
     <a href="{% url 'lessons' %}" class="modal-trigger">
       <div class="overlay">
         <div class="text">I can teach all abilites but specialise in the grass roots rider.</div>
@@ -105,8 +105,8 @@
   <div class='col s12 m4 sqh fb_sq image_container'>
 
     <img src='{{p.full_picture}}' class="fb_pic" />
-    <p class='centered'>'{{p.message}}'</p>
-    <a href="{{p.link}}" class="">
+    <p class='centered'>'{{p.message|truncatechars:50}}'</p>
+    <a href="{{p.permalink_url}}" class="">
       <div class="overlay">
         <div class="text"><img class="zi" src="{% static 'images/fuof.png' %}" /></div>
       </div>

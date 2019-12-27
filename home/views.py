@@ -15,7 +15,7 @@ def index1(request):
     r = requests.get('https://graph.facebook.com/v4.0/me?fields=id%2Cname%2Cfeed&access_token=EAAFwJhMIpkUBAJZCGoIvHYcqeprUqWGEasJ2pPCjageosx35is5ZAH1gn4xnBhFoKqV6NzAhXn25xvIhYIXkTjODCeKy9FlQSGQX496ZAQ7MuN8FgWLNlTXh1vYBeyE0OtofnxKy80UMBay6aZCqkUCVZAlca1KE5hGaoaZA5q6pcJReZC6bL0eDzHPZCtPNf6ZBRrMmnTYvAxAZDZD')
     json = r.json()
     
-    h = requests.get('https://graph.facebook.com/v4.0/me?fields=name%2Cfeed.limit(9)%7Bfull_picture%2Cmessage%2Clink%7D&access_token=EAAFwJhMIpkUBACt4KPaeRa03hc3LNMrhWjIAesibZA2LeKuZCnsm9u6ezo8UbXDlMOODW2QOS9ZBzpJjHobM7IxDarRgIE0lEL3MI7ZBSfnPU64gxTfb0hV2VB2RgZB2wmAxpnag6M1ju2K3RjSAZAY3qFvtsZBBQUZC0nEV85VsWwZDZD')
+    h = requests.get('https://graph.facebook.com/v5.0/230231543752378?fields=feed.limit(9)%7Bmessage%2Cpermalink_url%2Cfull_picture%7D&access_token=EAAFwJhMIpkUBAI8drgzZAd3I8KntuoA6ZB9ZCTT3P1fjLkizWc4Tr3QbSqLHbGAIJZBVyIXOX1zfLXhHbkvYbnEROCSqaITuYh0IoPz7KDfDfuCZC9VqFViun185jcwPfPIZBZCHz9E1VPLXrnfgLJ70Igdez7AHqdgaiK574DuHAZDZD')
     json2 = h.json()
     fb=Feedback.objects.all()
     Signupform=signupform()
