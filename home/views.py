@@ -7,10 +7,9 @@ from signup.forms import signupform
 
 
 
-def index(request):
-    return render(request,'index.html')
 
-def index1(request):
+
+def index(request):
     
     r = requests.get('https://graph.facebook.com/v4.0/me?fields=id%2Cname%2Cfeed&access_token=EAAFwJhMIpkUBAJZCGoIvHYcqeprUqWGEasJ2pPCjageosx35is5ZAH1gn4xnBhFoKqV6NzAhXn25xvIhYIXkTjODCeKy9FlQSGQX496ZAQ7MuN8FgWLNlTXh1vYBeyE0OtofnxKy80UMBay6aZCqkUCVZAlca1KE5hGaoaZA5q6pcJReZC6bL0eDzHPZCtPNf6ZBRrMmnTYvAxAZDZD')
     json = r.json()
@@ -19,7 +18,7 @@ def index1(request):
     json2 = h.json()
     fb=Feedback.objects.all()
     Signupform=signupform()
-    return render(request,"index1.html",{"json":json, "json2":json2, 'signupform':Signupform, "fb":fb})
+    return render(request,"index.html",{"json":json, "json2":json2, 'signupform':Signupform, "fb":fb})
        
     
 

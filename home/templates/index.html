@@ -1,51 +1,198 @@
 {% extends 'base.html' %}{% load staticfiles %}{% block content %}
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '404783807112773',
+      xfbml: true,
+      version: 'v5.0'
+    });
+    FB.AppEvents.logPageView();
+  };
 
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) { return; }
+    js = d.createElement(s);
+    js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
 
-<div class="slider fullscreen">
-  <ul class="slides slides2">
+<!-- fullscreen images slider -->
 
-         <li class="fullblock">
-            <div class="overlay-block h-100 w-100"></div>
-          <img src="{% static 'images/jb_1.jpg' %}" class='img_slider_adj'> <!-- random image -->
-        <div class="caption center-align fill">
-          <h3 class='slide1_text'><b class='or'>JESS</b><br>BUTLER EVENTING</h3>
-           
-        </div>
-      </li>
+<div class="slider fadeslider ">
+  <ul class="slides">
+
     <li class="fullblock">
-       <div class="overlay-block h-100 w-100"></div>
-      <img src="{% static 'images/jb_2.jpg' %}" class='img_slider_adj'>
+      <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_1.jpg' %}" class='img_slider_adj'>
       <!-- random image -->
-      <div class="caption center-align bg">
-        <h3 class='slide2_text'><b class='or'>C</b>oaching</h3>
-     
-      </div>
-    </li>
-    <li class="fullblock">
-       <div class="overlay-block h-100 w-100"></div>
-      <img src="{% static 'images/jb_5.jpg' %}" class='img_slider_adj'>
-      <!-- random image -->
-      <div class="caption center-align">
-        <h3 class='slide2_text'>Horse <span class='or'>Camps</span></h3>
-      
+      <div class="caption center-align fill">
+        <h3 class='slide1_text'><b class='or'>JESS</b><br>BUTLER EVENTING</h3>
+
       </div>
     </li>
     <li class="fullblock">
       <div class="overlay-block h-100 w-100"></div>
-      <img src="{% static 'images/jb_4.jpg' %}" class='img_slider_adj'/>
+      <img src="{% static 'images/jb_2.jpg' %}" class='img_slider_adj'>
+      <!-- random image -->
+      <div class="caption center-align bg">
+        <h3 class='slide2_text'><b class='or'>C</b>oaching</h3>
+
+      </div>
+    </li>
+    <li class="fullblock">
+      <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_5.jpg' %}" class='img_slider_adj'>
+      <!-- random image -->
+      <div class="caption center-align">
+        <h3 class='slide2_text'>Horse <span class='or'>Camps</span></h3>
+
+      </div>
+    </li>
+    <li class="fullblock">
+      <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_4.jpg' %}" class='img_slider_adj' />
       <!-- random image -->
       <div class="caption">
         <h3 class='slide4_text'><b class='blu'>G</b><b class='redd'>B</b> <br><b class='or'>Competitor</span></b></h3>
-     
+
       </div>
     </li>
-    <li>
-       <div class="caption center-align">
-        <img class="logo_image" src="{% static 'images/jb logo.jpg' %}" />
-        <h5 class="contact light white-text text-lighten-4 logo_text">contact<br>@<br>jessbutlereventing.com<br><span class='bl'> Full Site Coming Soon</span></h5>
-      </div>
-    </li>
+
   </ul>
 </div>
 
+<!-- feature section -->
+
+<div class="row">
+  <div class="col s12 feature">
+
+    <div class="container">
+      <h1>What I Do</h1>
+      <div class="col s12 f-holder">
+        <div class="col s12 m4 f-text "><i class="material-icons">record_voice_over</i><br> I am a seasoned eventer and have competed up to 3* level.
+        </div>
+        <div class="col s12 m4 f-text "><i class="material-icons">airplanemode_active</i><br> I run weekend training camps for you and your horse including accommodation</div>
+        <div class="col s12 m4 f-text"><i class="material-icons">beenhere</i><br> I teach all levels, dressage and jumping.Lessons start from £25</div>
+        <div class="col s12  m4 f-text"><i class="material-icons">pan_tool</i><br> My large all surface areana has a full set of jumps, a bank and water complex
+        </div>
+        <div class="col s12 m4 f-text"><i class="material-icons">location_on</i><br> I am located 5 minutes from the Newark A1 junction along the A46
+        </div>
+        <div class="col s12 m4 f-text"><i class="material-icons">group_work</i><br> I can work with single riders or small groups</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- camp section -->
+<div class="row">
+  <div class="col s12 camp">
+    <div class="col s12 m6 camp_image">
+
+      <img src="{% static 'images/stables.png' %}" class="responsive-img" />
+    </div>
+    <div class="col s12 m6">
+      <div class='hc_text'>
+        <h1>Horse Camps</h1>
+        <div class="col s 12 m8 offset-m2 camp_list">
+          We offer weekend horse camps.Teaching sessions AM & PM both days and your horse stays overnight in 5 star accomadation. Contact us for dates
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="col s12 m8 offset-m2 fb_hold">
+        <div id="slider">
+      <div class="container">
+         {% for f in fb %}
+        <div class="slide">
+          <h3>{{f.owner}}</h3>
+          <p>
+           {{f.review}}
+          </p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<!-- facebook wall -->
+
+<div class="row">
+  <div class='row fb_holder '>
+
+    {% for p in json2.feed.data%}
+    <div class='col s12 m4 sqh fb_sq image_container'>
+
+      <img src='{{p.full_picture}}' class="fb_pic" />
+      <p class='centered'>'{{p.message|truncatechars:50}}'</p>
+      <a href="{{p.permalink_url}}" class="">
+        <div class="overlay">
+          <div class="text"><img class="zi" src="{% static 'images/fuof.png' %}" /></div>
+        </div>
+      </a>
+
+
+    </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+<!-- white block -->
+<div class="row">
+  <div class="col s12 white_block">
+    <div class="sign">
+      <div class="col s6 offset-s3 signup">
+        <h5>Receive E Mail Updates </h5>
+        <form class="input-group" method='post' action="{% url 'emailadd' %}">
+
+          <br> {{ signupform }}
+          <button class="btn btn-sm btn-secondary" type="submit">Sign up</button> {% csrf_token %}
+        </form>
+        <div>
+          {% if messages %} {% for message in messages %} {{ message }} {% endfor %} {% endif %}
+        </div>
+      </div>
+    </div>
+  
+  </div>
+</div>
+<!-- lesson slider -->
+  <div class="row">
+    
+     <div class="slider">
+    <ul class="slides  ">
+      <li>
+        <img  src="{% static 'images/riding-lesson.jpg' %}" /> <!-- random image -->
+        <div class="caption center-align">
+          <h2>Riding Lessons for <span class='price'>t</span>he Grass Roots Ride<span class='price'>r!</span></h2>
+          <h5 class="light grey-text text-lighten-3">Starting from <span class='price'>£25 </span>per hour</h5>
+        </div>
+      </li>
+   
+
+    </ul>
+  </div>
+      
+    </div>
+
+
+
+
+<script type="text/javascript" id="cookieinfo" src="//cookieinfoscript.com/js/cookieinfo.min.js">
+</script>
 {% endblock %}

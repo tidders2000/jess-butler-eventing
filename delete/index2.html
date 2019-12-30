@@ -1,0 +1,51 @@
+{% extends 'base.html' %}{% load staticfiles %}{% block content %}
+
+
+<div class="slider fullscreen">
+  <ul class="slides slides2">
+
+         <li class="fullblock">
+            <div class="overlay-block h-100 w-100"></div>
+          <img src="{% static 'images/jb_1.jpg' %}" class='img_slider_adj'> <!-- random image -->
+        <div class="caption center-align fill">
+          <h3 class='slide1_text'><b class='or'>JESS</b><br>BUTLER EVENTING</h3>
+           
+        </div>
+      </li>
+    <li class="fullblock">
+       <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_2.jpg' %}" class='img_slider_adj'>
+      <!-- random image -->
+      <div class="caption center-align bg">
+        <h3 class='slide2_text'><b class='or'>C</b>oaching</h3>
+     
+      </div>
+    </li>
+    <li class="fullblock">
+       <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_5.jpg' %}" class='img_slider_adj'>
+      <!-- random image -->
+      <div class="caption center-align">
+        <h3 class='slide2_text'>Horse <span class='or'>Camps</span></h3>
+      
+      </div>
+    </li>
+    <li class="fullblock">
+      <div class="overlay-block h-100 w-100"></div>
+      <img src="{% static 'images/jb_4.jpg' %}" class='img_slider_adj'/>
+      <!-- random image -->
+      <div class="caption">
+        <h3 class='slide4_text'><b class='blu'>G</b><b class='redd'>B</b> <br><b class='or'>Competitor</span></b></h3>
+     
+      </div>
+    </li>
+    <li>
+       <div class="caption center-align">
+        <img class="logo_image" src="{% static 'images/jb logo.jpg' %}" />
+        <h5 class="contact light white-text text-lighten-4 logo_text">contact<br>@<br>jessbutlereventing.com<br><span class='bl'> Full Site Coming Soon</span></h5>
+      </div>
+    </li>
+  </ul>
+</div>
+
+{% endblock %}

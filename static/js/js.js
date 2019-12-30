@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.slider').slider({ full_width: true, indicators: false });
+    $('.slider').slider({ full_width: true, indicators: false, height:800 });
     $(".button-collapse").sideNav();
     $('.modal').modal();
 
