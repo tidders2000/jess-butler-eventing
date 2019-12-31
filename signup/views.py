@@ -22,4 +22,4 @@ def emailadd(request):
          
          signup.save
          messages.error(request, 'email added')
-        return redirect(reverse('index1'))
+        return redirect(reverse('index'))
