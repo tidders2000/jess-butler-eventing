@@ -158,10 +158,11 @@
     <div class="sign">
       <div class="col s6 offset-s3 signup">
         <h5>Receive E Mail Updates </h5>
-        <form class="input-group" method='post' action="{% url 'emailadd' %}">
+        <form class="input-group" method='POST' action="">
 
           <br> {{ signupform }}
-          <button class="btn btn-sm btn-secondary" type="submit">Sign up</button> {% csrf_token %}
+          {% csrf_token %}
+          <button class="btn btn-sm btn-secondary" type="submit">Sign up</button> 
         </form>
         <div>
           {% if messages %} {% for message in messages %} {{ message }} {% endfor %} {% endif %}

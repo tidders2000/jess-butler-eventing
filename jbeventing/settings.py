@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'accounts',
     'feedback',
     'horsecamp',
-    'signup',
+    
+    
     
 ]
 

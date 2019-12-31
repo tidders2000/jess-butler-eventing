@@ -1,8 +1,10 @@
 from django.shortcuts import render, redirect, reverse, HttpResponseRedirect
+from django.contrib import messages
 from feedback.models import Feedback
 import json
 import requests
-from signup.forms import signupform
+from .models import sign
+from .forms import signupform
 
 
 
@@ -18,6 +20,14 @@ def index(request):
     json2 = h.json()
     fb=Feedback.objects.all()
     Signupform=signupform()
+    if request.method=='POST':
+    
+        signup = signupform(request.POST)
+        if signup.is_valid():
+         signup.save(commit=True)
+         signup.save
+         messages.error(request, 'email added')
+        return redirect(reverse('index'))
     return render(request,"index.html",{"json":json, "json2":json2, 'signupform':Signupform, "fb":fb})
        
     

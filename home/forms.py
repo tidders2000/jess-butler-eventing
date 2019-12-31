@@ -1,7 +1,7 @@
 from django import forms
-from .models import signup
+from .models import sign
 
 class signupform(forms.ModelForm):
     class Meta:
-         model = signup
+         model = sign
          fields = ('name','email')
