@@ -587,3 +587,10 @@ box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
  }
 
 }
+
+@media only screen and (min-width: 1024px) {
+    
+ .hc_text h1{
+     padding-top:70px;
+ }
+ }
