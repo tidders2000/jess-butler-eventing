@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),'07ff6f6e02ee4ffb9a077b09c6ca76f7.vfs.cloud9.us-east-1.amazonaws.com','jess-butler-eventing.herokuapp.com','jessbutlereventing.com','www.jessbutlereventing.com']
 
