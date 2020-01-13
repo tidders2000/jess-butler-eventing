@@ -93,45 +93,51 @@
 <!-- camp section -->
 <div class="row">
   <div class="col s12 camp">
-    <div class="col s12 m5 offset-m1 l4 offset-l2 camp_image">
-
-      <img src="{% static 'images/stables2.png' %}" class="stables_pad" />
-    </div>
-    <div class="col s12 m6 l6">
-      <div class='hc_text'>
-        <h1>Horse Camps</h1>
-        <div class="col s12   camp_list">
-          We offer weekend horse camps.Teaching sessions AM & PM both days and your horse stays overnight in 5 star accomadation. Contact us for dates
-
+     <div class="slider">
+    <ul class="slides  ">
+      <li>
+        <img src="{% static 'images/stables.png' %}" />
+        <!-- random image -->
+        <div class="caption center-align">
+          <h2 class="hc">Horse Camps </h2>
+          <h5 class="light grey-text text-lighten-3">We offer weekend horse camps.Teaching sessions AM & PM both days and your horse stays overnight in 5 star accomadation. Contact us for dates</h5>
         </div>
-      </div>
-    </div>
-    
+      </li>
+
+
+    </ul>
+  </div>
+
+
+  
+
     <div class="container">
+      <h1>Reviews</h1>
       <div class="col s12 m8 offset-m2 fb_hold">
         <div id="slider">
-      <div class="container">
-         {% for f in fb %}
-        <div class="slide">
-          <h3>{{f.owner}}</h3>
-          <p>
-           {{f.review}}
-          </p>
+          <div class="container">
+            {% for f in fb %}
+            <div class="slide">
+              <h3>{{f.owner}}</h3>
+              <p>
+                {{f.review}}
+              </p>
+            </div>
+            {% endfor %}
+          </div>
         </div>
-        {% endfor %}
-      </div>
-    </div>
       </div>
     </div>
 
   </div>
 
-
+  </div>
 </div>
 
 <!-- facebook wall -->
 
 <div class="row">
+  <h1 class="face_title">Facebook</h1>
   <div class='row fb_holder '>
 
     {% for p in json2.feed.data%}
@@ -160,36 +166,36 @@
         <h5>Receive E Mail Updates </h5>
         <form class="input-group" method='POST' action="">
 
-          <br> {{ signupform }}
-          {% csrf_token %}
-          <button class="btn btn-sm btn-secondary" type="submit">Sign up</button> 
+          <br> {{ signupform }} {% csrf_token %}
+          <button class="btn btn-sm btn-secondary" type="submit">Sign up</button>
         </form>
         <div>
           {% if messages %} {% for message in messages %} {{ message }} {% endfor %} {% endif %}
         </div>
       </div>
     </div>
-  
+
   </div>
 </div>
 <!-- lesson slider -->
-  <div class="row">
-    
-     <div class="slider">
+<div class="row">
+
+  <div class="slider">
     <ul class="slides  ">
       <li>
-        <img  src="{% static 'images/riding-lesson.jpg' %}" /> <!-- random image -->
+        <img src="{% static 'images/riding-lesson.jpg' %}" />
+        <!-- random image -->
         <div class="caption center-align">
           <h2>Riding Lessons for <span class='price'>t</span>he Grass Roots Ride<span class='price'>r!</span></h2>
           <h5 class="light grey-text text-lighten-3">Starting from <span class='price'>£25 </span>per hour</h5>
         </div>
       </li>
-   
+
 
     </ul>
   </div>
-      
-    </div>
+
+</div>
 
 
 
