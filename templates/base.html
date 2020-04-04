@@ -1,0 +1,132 @@
+{% load staticfiles %} {% load bootstrap_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}" type="text/css" />
+      <link rel="stylesheet" href="{% static 'css/2-vertical.css' %}" type="text/css" />
+    <title>{% block page_title %}{% endblock %}</title>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0"></script>
+</head>
+
+<body>
+    
+    
+    <nav class='nav'>
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="{% static 'images/grey-sq.jpg' %}">
+                    </div>
+                    <a href="#"><img class="circle" src="{% static 'images/jb logo.jpg' %}"></a>
+
+                </div>
+            </li>
+            <li><a href="{% url 'index' %}"><i class="material-icons">house</i>Home</a></li>
+          
+            <li><a href="" class='modal-trigger'data-target="modal1"><i class="material-icons">email</i>Contact</a></li>
+
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="large menu material-icons">menu</i></a>
+        <img src="{% static 'images/jb logo.small.jpg' %}" class="nav_logo"></img>
+    </nav>
+  
+   {% block content %}{% endblock %}
+    <footer class="page-footer">
+        <!--<div class="container main_footer">-->
+        <div class="row footer_holder">
+            <div class="col l6 s12 m6 left-text">
+
+                <div class='col m6 s12'>
+                    <ul class='footer_links'>
+                        <li><a href="{% url 'index' %}"><i class="material-icons">house</i>Home</a></li>
+                        
+                        <li><a href=""><i class="material-icons">email</i>Contact</a></li>
+                    </ul>
+                </div>
+                <div class='col m6 s12'>
+                    <p class="address">Jess Butler Eventing<br>Danethorpe Hill<br>Newark<br>Notts<br>NG24 2PD<br>07596923756</p>
+                   <a class="waves-effect grey darken-1 waves-light btn modal-trigger" data-target="modal1" class=""><i class="material-icons right">contacts</i>Contact</a>
+
+                </div>
+                
+
+
+
+            </div>
+            <div class="col l4 offset-l1 s12 m6">
+                <div>
+                    <div class="map-holder">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   </div> -->
+        <div class="footer-copyright">
+            <div class="container">
+                <a href="https://scruffyhorse.com">© 2019 Scruffy horse Media</a>
+                <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDHHyac2SiOYPNYxXMK7rqJjnB8nCaaxE&callback=initMap"></script>
+    <script type="text/javascript" src="{% static 'js/maps.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/js.js' %}"></script>
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+    <form class="col s12 m12" onsubmit="return sendMail(this);">
+					<div class="row">
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">account_circle</i>
+							<input id="fullname" name="name" type="text" class="validate">
+							<label for="icon_prefix">Name</label>
+						</div>
+						<div class="input-field col s12 m6">
+							<i class="material-icons prefix">phone</i>
+							<input id="icon_telephone" type="tel" class="validate">
+							<label for="icon_telephone">Telephone</label>
+						</div>
+
+						<div class="input-field col s12 m12">
+							<i class="material-icons prefix">email</i>
+							<input id="emailaddress" name="emailaddress" type="email" class="validate">
+							<label for="email">Email</label>
+						</div>
+
+						<div class="input-field col s12 m12">
+							<i class="material-icons prefix">mode_edit</i>
+							<textarea id="projectsummary" name="projectsummary" class="materialize-textarea"></textarea>
+							<label for="textarea1">Enquiry</label>
+						</div>
+					</div>
+					<button type="submit" class="btn waves-effect waves-light  right">Submit<i class="material-icons right">send</i></button>
+				</form>
+    </div>
+    <div class="modal-footer">
+      <a href=" class="modal-close waves-effect waves-green btn-flat"</a>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>

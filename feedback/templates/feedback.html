@@ -1,0 +1,31 @@
+{% extends 'base1.html' %}{% load staticfiles %}{% block content %}
+
+
+
+
+  <div class="row mr">
+
+    {% for f in fb %}
+    <div class="col s12 m6 l4 fb_layout">
+      <div class="image_container">
+       <img src="{{MEDIA_URL}}{{f.horse_image }}" alt="Avatar" class="image">
+         <a href="#{{f.id}}" class="modal-trigger"><div class="overlay">
+          <div class="text">{{f.owner}}<br> & <br>{{f.horseName}}</div>
+        </div></a>
+      </div>
+    </div>
+      <div id="{{f.id}}" class="modal">
+    <div class="modal-content">
+      <h4>{{f.owner}} <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat right"> <i class="large material-icons fb_close">clear</i></a></h4>  
+      <p class="modal_para">"{{f.review}}"</p>
+    </div>
+    <div class="modal-footer">
+     
+    </div>
+  </div>
+    {% endfor %}
+  </div>
+
+
+
+{% endblock %}

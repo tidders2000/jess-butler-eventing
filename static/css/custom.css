@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Romanesco&display=swap');
+ /* .........General CSS All pages.............. */
+ body{
+      font-family: 'Roboto', sans-serif;
+ }
+.col{
+   
+    padding-right: 0!important;
+    padding-left: 0!important;
+}
+
+.row{
+    padding:0!important;
+}
+nav{
+    height:70px!important;
+}
+.message{
+    width:20%;
+    margin-left: 40%;
+    min-height:50px;
+    margin-top: 50px;
+    background-color:#FFF3CD;
+    border-radius: 5px;
+    padding-left: 5px;
+    color:black;
+   
+}
+
+.row{
+  
+    padding:0;
+    margin-bottom: 0!important;
+}
+i{
+    margin-right: 20px;
+}
+/*jess logo colours*/
+
+
+
+.or{
+    color: #DBA543;
+    background-color: transparent; 
+}
+
+.bl{
+    color: #2E2665;
+    background-color: transparent; 
+}
+ .gr{
+     color:#707070;
+ }
+
+.blu{
+    color:#00247d;
+}
+
+.redd{
+    color:#cf142b;
+}
+ /* .........Base..................... */
+ .logo_image{
+   
+   background-size: cover;
+   max-width: 320px;
+   max-height:116px;
+   }
+   
+.nav{
+    border-bottom: 5px solid #DBA543;
+    -webkit-box-shadow: 0 8px 6px -6px #707070;
+    -moz-box-shadow: 0 8px 6px -6px #707070;
+    box-shadow: 0 8px 6px -6px #707070;
+    margin-bottom: 5px;
+    background-color: white;
+}
+.nav_logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+.button-collapse{
+    color:#707070;
+ 
+}
+
+.menu{
+    font-size: 50px!important;
+}
+
+.logo_text{
+     font-family: 'Montserrat', sans-serif;
+         font-size: 50px;
+}
+
+.circle{
+    width:124px !important;
+    height:124px!important;
+    padding-bottom: 30px;
+    
+}
+
+
+.left-text{
+   padding-left: 60px!important;
+}
+
+ 
+ /* .............................index pages......................... */
+ 
+ .container h1{
+     color:white;
+ }
+ /* feature */
+ 
+ .feature{
+     background-color: #707070;
+    padding-top: 50px;
+    min-height:600px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+ }
+ 
+ .f-holder{
+     
+     margin-top: 50px;
+     margin-bottom: 50px;
+ }
+ .f-text{
+    padding: 30px!important;
+    line-height: 27px;
+    font-size: 21px;
+    color: #eee;
+   
+ }
+ /* horse camp */ 
+  .camp{
+     background-color:#DBA543;
+    padding-top: 50px;
+    
+    padding-bottom: 150px!important;
+ }
+ 
+ .camp_list{
+        padding: 30px!important;
+    line-height: 27px;
+    font-size: 21px;
+    color: #eee;
+ }
+ 
+ .camp_image{
+     margin-top: 100px;
+     padding: 5px;
+ }
+ 
+ .stables_pad{
+     padding-left: 10px;
+     padding-top: 10px;
+     display: block;
+     margin: auto;
+ }
+ 
+ .hc {
+     margin-top: 25%;
+      color: #DBA543;
+    
+ }
+ 
+ .hc_text {
+     margin-left: 60px;
+     margin-right: 60px;
+ }
+  /* feedback feature */
+  
+.fb_hold{
+    margin-top: 100px;
+    padding-bottom: 100px;
+  
+}
+ 
+ 
+ .slides li{
+     background-color: #DBA543;
+     color: white;
+     line-height: 27px;
+    font-size: 40px;
+     
+ }
+ 
+ .slider_para{
+    display:inline-block;
+   overflow:auto;
+   /*word-break: break-all;*/
+   font-size: 30px;
+   line-height: 40px;
+    color:white!important;
+    font-family: 'Roboto', sans-serif;
+}
+
+  /* sign up*/
+.white_block{  
+    padding-bottom: 100px!important;
+}
+.sign{
+    margin-top: 100px;
+}
+
+
+.rl_pic{
+    
+    margin-top: 100px;
+}
+
+.rl_text h1{
+    margin-top: 100px;
+     margin-left: 60px;
+     color:white;
+}
+
+ .less_slides{
+     min-height: 800px!important;
+ }
+.price{
+    color:#DBA543;
+} 
+ 
+.contact{
+    font-size: 1.2em;
+}
+
+.img_slider_adj{
+    min-height:800px;  
+}
+
+.slide1_text{
+    font-size: 100px;
+    margin-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slide2_text{
+        font-size: 100px;
+    margin-top: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.slide4_text{
+        font-size: 100px;
+    margin-top: 18%;
+    margin-left:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fullblock{
+    display:block;
+     background-size: cover;
+  position: relative;
+ 
+}
+
+.overlay-block {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
+  transition: 0.5s ease;
+  background-color: #572D23;
+  overflow: hidden;
+}
+
+.slider{
+
+    min-height: 700px;
+}
+
+
+
+.fb_slider_title{
+    width:80%;
+}
+
+.face_title{
+    color:#DBA543;
+    margin-left:20px;
+}
+/* .........footer.............. */
+
+.footer_holder{
+border-top: 5px solid #DBA543;
+ -webkit-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px -1px 5px 0px rgba(0,0,0,0.75);
+    margin-top: 5px;
+        padding-bottom: 100px!important;
+        padding-top: 50px!important;
+}
+
+
+#map{
+  display:block;
+  margin: auto;
+  padding-top: 20px;
+  padding-bottom:20px;
+ width: 300px;
+  height:300px;
+  z-index: 0;
+  
+}
+
+.map-holder{
+    padding-top:20px;
+}
+
+.page-footer{
+    background-color: #2E2665;
+    padding-top:0;
+}
+
+.footer-copyright{
+    background-color: #DBA543!important;
+}
+
+.footer_links li a{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  color:#707070;
+}
+
+.address{
+    font-family: 'Roboto', sans-serif!important;
+  font-size: 18px!important;
+  color:#707070;
+}
+/* .........feedback page.............. */
+.image_container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 280.17px;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  
+  transition: .5s ease;
+  background-color: #707070;
+  opacity: 0;
+ 
+}
+
+.image_container:hover .overlay {
+ opacity: 0.8;
+ 
+}
+
+.text {
+  color: #DBA543;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.modal{
+    width:35%;
+    overflow-y: hidden;
+    
+}
+
+.modal-content{
+    background-color:#2E2665;
+    color:white;
+}
+.modal_para{
+    display:inline-block;
+   overflow:auto;
+   word-break: break-all;
+   background-color:white;
+   color:black;
+    font-family: 'Roboto', sans-serif;
+}
+
+.modal .modal-footer{
+     background-color:#2E2665;
+}
+
+.fb_close{
+    color:white;
+    font-size:30px;
+}
+
+.fb_layout{
+    padding: 0 !important;/* corrects materalise gutter */
+}
+
+.mr{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
+
+/* .........Horse Camp.............. */
+.circ1{
+    
+    /*background-color: #707070;*/
+    height: 200px;
+    width: 200px!important;
+    background-image: url('badge.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center!important;
+    vertical-align: middle;
+    
+
+}
+
+.squ2{
+      background-color: #707070;
+    height: 200px;
+    width: 200px;
+}
+
+.horsecamp_cb{
+   background-image: url('triangle_gr.jpg');
+   height:400px;
+   background-repeat: no-repeat;
+   background-size:contain;
+   margin-top: 150px;
+   margin-bottom: 100px;
+   text-align: center;
+  
+   
+}
+
+.horsecamp_cb_right{
+   float: right;
+   background-image: url('triangle_gright.jpg');
+   height:400px;
+   background-repeat: no-repeat;
+   background-size:contain;
+   background-position: right;
+   margin-top: 150px;
+   margin-bottom: 100px;
+   
+}
+
+
+
+
+.hc_para{
+    background-color:rgba(0,36,125,0.5) ;
+    margin-top: 150px;
+    min-height: 400px!important;
+    padding-right: 50px!important;
+    padding: 100px!important;
+}
+
+/* .........index1..................... */
+
+
+.sqh{
+    height:400px;
+    padding-left: 0;
+    padding-right:0;
+    position: relative;
+    text-align: center;
+    background-color: #DBA543;
+}
+
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size: 30px;
+ 
+
+  
+}
+
+.centered_head {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color:white;
+  font-size: 30px;
+}
+  
+
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color:white;
+  font-size: 30px;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.image-para{
+    position: absolute;
+    top:20%;
+    left:15%;
+    width:80%;
+    font-size: 30px;
+    background-color: rgba(240, 255, 255, 0.5);
+    color:#DBA543;
+    font-weight: 400;
+    font-family: 'Romanesco', cursive;
+}
+
+.image_container{
+    padding-left:0!important;
+    padding-right: 0!important;
+    text-align: center;
+}
+.fb_pic{
+    height: 100%;
+    width: 100%;
+}
+
+.fb_holder{
+    margin-bottom: 0;
+}
+
+
+
+.signup{
+    padding:20px;
+}
+
+.signup h5{
+    color: #707070;
+}
+
+.btn-secondary{
+    background-color: #DBA543;
+}
+
+.feed_slider_title{
+    color: #707070;
+}
+
+
+/* .........Medi Queries.............. */
+@media only screen and (max-width: 700px) {
+  .slide1_text , .slide2_text, .slide4_text{
+    font-size: 40px;
+      margin-top: 18%;
+  
+  }
+  
+
+    .logo_text{
+    font-size: 20px;
+  }
+  
+  .logo_image{
+      max-width: 150px;
+   max-height:58px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+ .hc_text h1{
+   
+     margin-left: 0px;
+    
+ }
+ 
+  
+ .camp_list{
+    padding: 0!important;
+
+ }
+ 
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+ .hc_text h1{
+     padding-top:70px;
+ }
+ }
