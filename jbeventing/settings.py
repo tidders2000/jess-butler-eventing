@@ -28,7 +28,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'),'07ff6f6e02ee4ffb9a077b09c6ca76f7.vfs.cloud9.us-east-1.amazonaws.com','jess-butler-eventing.herokuapp.com','jessbutlereventing.com','www.jessbutlereventing.com','127.0.0.1']
+ALLOWED_HOSTS = [os.environ.get('C9_HOSTNAME'), '07ff6f6e02ee4ffb9a077b09c6ca76f7.vfs.cloud9.us-east-1.amazonaws.com',
+                 'jess-butler-eventing.herokuapp.com', 'jessbutlereventing.com', 'www.jessbutlereventing.com', '127.0.0.1']
 
 
 # Application definition
@@ -45,9 +46,9 @@ INSTALLED_APPS = [
     'accounts',
     'feedback',
     'horsecamp',
-    
-    
-    
+
+
+
 ]
 
 MIDDLEWARE = [
@@ -65,7 +66,7 @@ ROOT_URLCONF = 'jbeventing.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR),'templates'],
+        'DIRS': [os.path.join(BASE_DIR), 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,30 +76,28 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'django.template.context_processors.static',
                 'django.template.context_processors.media',
-                
+
             ],
-           
+
         },
     },
 ]
 
 
-    
-    
-
 WSGI_APPLICATION = 'jbeventing.wsgi.application'
 
 
 if "DATABASE_URL" in os.environ:
-       DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+    DATABASES = {'default': dj_database_url.parse(
+        os.environ.get('DATABASE_URL'))}
 else:
     print("Database url not found using sql instead")
     DATABASES = {
-     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
     }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -125,7 +124,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
@@ -146,16 +144,16 @@ USE_TZ = True
 # STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 AWS_S3_OBJECT_PARAMETERS = {
-    'Expires':'Thu, 31 Dec 2099 20:00:00 GMT',
-    'CacheControl':'max-age=94608000',
-    
+    'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
+    'CacheControl': 'max-age=94608000',
+
 }
 AWS_STORAGE_BUCKET_NAME = 'jessbutler-media'
 AWS_S3_REGION_NAME = 'us-east-1'
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
 
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com'% AWS_STORAGE_BUCKET_NAME
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 STATICFILES_LOCATION = 'static'
 STATIC_URL = '/static/'
