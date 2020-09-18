@@ -8,7 +8,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import env
+#import env
 import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -161,3 +161,6 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+API_KEY = os.environ.get('API_KEY')
+FB_ACCESS = os.environ.get('FB_KEY')
